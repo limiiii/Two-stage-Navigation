@@ -1,0 +1,2 @@
+aws-robomaker-small-house-world-ros1:bringup:fusion:gazebo_env:gazebo_traffic_light:lingao_description:plumbing_param_server:teleop_twist_keyboard:testpkg:tf03_tfs:tf04_test:tf2_dynamic:urdf01_rviz:velodyne_simulator-master/velodyne_description:velodyne_simulator-master/velodyne_gazebo_plugins:velodyne_simulator-master/velodyne_simulator:yolov5_ros:yolov5_ros_msgs
+-DCATKIN_WHITELIST_PACKAGES=yolov5_ros_msgs -DCATKIN_DEVEL_PREFIX=/home/yang/lim-ws/devel -DCMAKE_INSTALL_PREFIX=/home/yang/lim-ws/install -G Unix Makefiles

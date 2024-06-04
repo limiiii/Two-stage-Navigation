@@ -1,0 +1,8 @@
+<launch>
+    <!-- 1.SLAM实现 -->
+    <include file = "$(find bringup)/launch/slam.launch"/>
+
+    <!-- 2.导航中的move_base -->
+    <include file = "$(find bringup)/launch/move_base.launch"/>
+
+</launch>

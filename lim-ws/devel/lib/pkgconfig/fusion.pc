@@ -1,0 +1,8 @@
+prefix=/home/yang/lim-ws/devel
+
+Name: fusion
+Description: Description of fusion
+Version: 0.0.0
+Cflags: -I/home/yang/lim-ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: autoware_msgs roscpp std_msgs message_runtime rospy sensor_msgs cv_bridge tf2_ros tf2_geometry_msgs

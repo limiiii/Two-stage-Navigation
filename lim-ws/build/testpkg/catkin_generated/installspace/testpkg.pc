@@ -1,0 +1,8 @@
+prefix=/home/yang/lim-ws/install
+
+Name: testpkg
+Description: Description of testpkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

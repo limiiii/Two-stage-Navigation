@@ -1,0 +1,21 @@
+chair 
+chair 
+cup tv
+tv cup
+cup 
+refrigerator chair
+chair refrigerator
+cup dog
+dog cup
+bed 
+dog 
+bed 
+sports ball 
+chair 
+airplane sports ball
+sports ball airplane
+airplane 
+airplane 
+chair 
+chair chair
+chair chair

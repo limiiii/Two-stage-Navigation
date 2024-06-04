@@ -1,0 +1,7 @@
+\subsubsection usage Usage
+\verbatim
+<node name="gazebo_traffic_light" pkg="gazebo_traffic_light" type="gazebo_traffic_light">
+  <param name="override" type="int" value="-1" />
+</node>
+\endverbatim
+

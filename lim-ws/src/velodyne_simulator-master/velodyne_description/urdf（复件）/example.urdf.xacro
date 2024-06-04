@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="example">
+  <!-- 支架 -->
+  <xacro:property name="support_length" value="0.15" /> <!-- 支架长度 -->
+  <xacro:property name="support_radius" value="0.01" /> <!-- 支架半径 -->
+  <xacro:property name="support_mass" value="0.1" /> <!-- 支架质量 -->
+  <xacro:property name="support_x" value="0.0" /> <!-- 支架安装的x坐标 -->
+  <xacro:property name="support_y" value="0.0" /> <!-- 支架安装的y坐标 -->
+  <xacro:property name="support_z" value="${base_length / 2 + support_length / 2}" /> 
+
+  <link name="support">
+      <visual>
+          <geometry>
+              <cylinder radius="${support_radius}" length="${support_length}" />
+          </geometry>
+          <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+          <material name="red">
+              <color rgba="0.8 0.2 0.0 0.8" />
+          </material>
+      </visual>
+      <collision>
+          <geometry>
+              <cylinder radius="${support_radius}" length="${support_length}" />
+          </geometry>
+      </collision>
+      <xacro:cylinder_inertial_matrix m = "${support_mass}" r = "${support_radius}" h = "${support_length}"/>
+  </link>
+  <gazebo reference = "support">
+      <material>Gazebo/Red</material>
+  </gazebo>
+
+  <joint name="support2base_link" type="fixed">
+      <parent link="base_link" />
+      <child link="support" />
+      <origin xyz="${support_x} ${support_y} ${support_z}" />
+  </joint>
+
+
+
+  <xacro:arg name="gpu" default="false"/>
+  <xacro:property name="gpu" value="$(arg gpu)" />
+
+  <xacro:include filename="$(find velodyne_description)/urdf/VLP-16.urdf.xacro"/>
+  <xacro:VLP-16 parent="support" name="velodyne" topic="/velodyne_points" hz="10" samples="440" gpu="${gpu}">
+    <origin xyz="0 0 0.4" rpy="0 0 0" />
+  </xacro:VLP-16>
+
+
+  <!-- <xacro:include filename="$(find velodyne_description)/urdf/HDL-32E.urdf.xacro"/>-->
+  <!-- <xacro:HDL-32E parent="base_link" name="velodyne2" topic="/velodyne_points2" hz="10" samples="220" gpu="${gpu}">-->
+    <!-- <origin xyz="0 0 0.6" rpy="0 0 0" />-->
+  <!-- </xacro:HDL-32E>-->
+
+</robot>

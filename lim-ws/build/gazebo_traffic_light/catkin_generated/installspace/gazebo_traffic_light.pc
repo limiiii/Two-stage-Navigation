@@ -1,0 +1,8 @@
+prefix=/home/yang/lim-ws/install
+
+Name: gazebo_traffic_light
+Description: Description of gazebo_traffic_light
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

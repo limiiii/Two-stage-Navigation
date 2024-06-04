@@ -1,0 +1,7 @@
+int64 xmax
+int64 xmin
+int64 ymin
+int64 ymax
+---
+float64 radian
+float64 distance

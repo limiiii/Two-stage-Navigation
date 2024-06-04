@@ -1,0 +1,18 @@
+<launch>
+
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen" clear_params="true">
+
+        <!-- 使用自定义全局路径规划器 -->
+        <param name="base_global_planner" value="global_planner/GlobalPlanner"/>
+        <!-- <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS"/> -->
+
+        <rosparam file="$(find bringup)/param/costmap_common_params.yaml" command="load" ns="global_costmap" />
+        <rosparam file="$(find bringup)/param/costmap_common_params.yaml" command="load" ns="local_costmap" />
+        <rosparam file="$(find bringup)/param/local_costmap_params.yaml" command="load" />
+        <rosparam file="$(find bringup)/param/global_costmap_params.yaml" command="load" />
+        <rosparam file="$(find bringup)/param/base_local_planner_params.yaml" command="load" />
+        <rosparam file="$(find bringup)/param/global_planner_params.yaml" command="load" />
+        <rosparam file="$(find bringup)/param/dwa_params.yaml" command="load" />
+    </node>
+
+</launch>

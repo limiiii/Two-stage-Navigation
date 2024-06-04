@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- 将 Urdf 文件的内容加载到参数服务器 -->
+  <param name="robot_description" command="$(find xacro)/xacro $(find gazebo_traffic_light)/urdf/car.urdf.xacro" />
+  <!-- 在 gazebo 中显示机器人模型 -->
+  <node pkg="gazebo_ros" type="spawn_model" name="model" args="-urdf -model mycar -param robot_description"  />
+
+  <rosparam ns="test_cantilevered_traffic_light" file="$(find gazebo_traffic_light)/yaml/light_sequence.yaml" />
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch" >
+    <arg name="world_name" value="$(find gazebo_traffic_light)/worlds/traffic_test2.world" />
+    <arg name="verbose" value="true" />
+  </include>
+
+</launch>

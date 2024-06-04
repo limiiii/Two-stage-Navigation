@@ -1,0 +1,47 @@
+chair laptop
+laptop chair
+keyboard tv
+chair laptop
+tv keyboard
+keyboard tv
+bowl keyboard
+tv keyboard
+keyboard tv
+tv tv
+chair tv
+tv tv
+laptop keyboard
+chair chair
+keyboard tv
+tv tv
+tv keyboard
+chair chair
+tv tv
+tv keyboard
+keyboard tv
+cup keyboard
+chair chair
+chair chair
+chair chair
+person chair
+tv laptop
+keyboard laptop
+chair person
+person chair
+chair person
+chair person
+laptop keyboard
+-------------test-------------
+
+oven refrigerator
+refrigerator oven
+tv refrigerator
+chair refrigerator
+refrigerator chair
+refrigerator 
+refrigerator oven
+oven refrigerator
+tv chair
+chair tv
+refrigerator chair
+person 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/fusion/scripts/clip-pytorch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/velodyne_simulator-master/velodyne_description/world/bookstore/aws-robomaker-bookstore-world" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/velodyne_simulator-master/velodyne_description/world/hospital/aws-robomaker-hospital-world" vcs="Git" />
+  </component>
+</project>

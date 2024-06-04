@@ -1,0 +1,4 @@
+GlobalTestPlanner:
+
+  use_dijkstra: false
+  use_grid_path: false
