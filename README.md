@@ -29,4 +29,3 @@ Ubuntu20.04下，在仿真环境中根据随机生成的自然语言导航指令
 	// test_main_dijkstra_clip_orien.py（使用clip模型）
 
 
-* 修改http_conn.cpp中的root路径
